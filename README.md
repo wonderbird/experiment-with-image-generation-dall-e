@@ -8,9 +8,20 @@ Many thanks ❤️ go to
 
 - [JetBrains](https://www.jetbrains.com/?from=PROJECT-NAME) who provide an [Open Source License](https://www.jetbrains.com/community/opensource/) for this project
 
-## Developer Guide
+## Prerequisites
 
-### Prerequisites
+### OpenAI API Key
+
+Configure your [OpenAI API key](https://platform.openai.com/account/api-keys) in a file named `./.env`:
+
+```shell
+OPENAI_API_KEY_NAME=Your API key name
+OPENAI_API_KEY=Error: You need to enter your OpenAI API key in the .env file
+```
+
+**Attention:** Do not commit your API key to the repository.
+
+### Python Environment and Packages
 
 It is recommended to use a python virtual environment. Create and activate it:
 
@@ -31,9 +42,13 @@ Then install this package in development mode:
 pip install --editable .
 ```
 
-### `python src/dall_e/main.py`
+## Run the application
 
-Run the application.
+```shell
+python src/dall_e/main.py
+```
+
+The image will be saved to the file `output.jpg`.
 
 ## Sample Image
 
