@@ -2,3 +2,6 @@ build
 hatch
 pytest
 pytest-watcher
+openai
+python-dotenv
+requests
